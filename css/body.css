@@ -1,0 +1,226 @@
+@font-face {
+    font-family:'nansong';
+    src:url('../fonts/nansong.ttf') format('truetype')
+}
+@font-face {
+    font-family:'qianyan';
+    src:url('../fonts/qianyan.ttf') format('truetype')
+}
+@font-face {
+    font-family:'zhengwen';
+    src:url('../fonts/zhengwen.otf') format('truetype')
+}
+body{
+    background-color: #e3e3e3;
+    overflow-x: hidden;
+    margin: auto 0;
+}
+
+.cover{
+    margin:0 0 100px 0;
+}
+.qianyan{
+    font-family: 'qianyan';
+    margin: 150px auto;
+    color: #343434;
+    font-size: 35px;
+    text-align: center;
+}
+.qianyan p{
+    margin: 150px auto;
+}
+
+.content span, .qianyan span{
+    background-color: #f5e091;
+}
+
+.flourish-embed span{
+    background-color:transparent;
+}
+
+.content{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 60px;
+    color: #343434;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+.content p{
+    font-family:'zhengwen';
+}
+.chapter{
+    margin-bottom: 50px;
+}
+
+h1{
+    text-align: center;
+    font-family:'nansong';
+    margin-top: 150px !important;
+    margin-bottom: 30px !important;
+
+}
+.fa-lg{
+    vertical-align: 0% !important;
+}
+
+.photo{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    margin-bottom: 35px;
+}
+.photo img{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+.box{
+    width: 800px;
+    height: 511px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.box p{
+    text-align: center;
+}
+.q1{
+    width: 435px;
+    height: 284px;
+    border:solid;
+    border-width: 3px;
+    border-color: #e3e3e3;
+    box-shadow:0px 0px 5px 3px #bcbcbc7f;
+    border-radius: 10px;
+    float: left;
+    color:#343434;
+    background-color: #fbc64c;
+}
+.title{
+    text-align: center;
+    font-family: 'nansong';
+    line-height: 3rem;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top:50px;
+}
+.q1:hover .title{
+    opacity: 0;
+}
+.q2:hover .title{
+    opacity: 0;
+}
+.q3:hover .title{
+    opacity: 0;
+}
+.q4:hover .title{
+    opacity: 0;
+}
+.q5:hover .title{
+    opacity: 0;
+}
+.q6:hover .title{
+    opacity: 0;
+}
+.q1:hover{
+    background-color: transparent;
+    background-image: url(/door/image/q1.png);
+}
+
+.q2{
+    width: 341px;
+    height: 194px;
+    border:solid;
+    border-radius: 10px;
+    border-width: 3px 3px 3px 0;
+    box-shadow:0px 0px 5px 3px #bcbcbc7f;
+    border-color: #e3e3e3;
+    display: inline-block;
+    color:#343434;
+    background-color: #ffd773;
+}
+.q2:hover{
+    background-color: transparent;
+    background-image: url(/door/image/q2.png);
+}
+.q5{
+    width: 435px;
+    height: 230px;
+    float: left;
+    border-radius: 10px;
+    border:solid;
+    border-width: 0 3px 3px 3px;
+    box-shadow:0px 0px 5px 3px #bcbcbc7f;
+    border-color: #e3e3e3;
+    background-color:#face5f;
+}
+.q5:hover{
+    background-color: transparent;
+    background-image: url(/door/image/q5.PNG);
+}
+.q3{
+    width: 149px;
+    height: 320px;
+    border: solid;
+    border-radius: 10px;
+    border-width: 0 1.5px 3px 0;
+    border-color: #e3e3e3;
+    box-shadow:0px 2px 5px 3px #bcbcbc7f;
+    display: inline-block;
+    background-color:#ffdf8f;
+}
+.q3:hover{
+    background-color: transparent;
+    background-image: url(/door/image/q3.png);
+}
+.q4{
+    width: 189px;
+    height: 195px;
+    border:solid;
+    border-radius: 10px;
+    border-width: 0 3px 3px 1.5px;
+    border-color: #e3e3e3;
+    box-shadow:0px 0px 5px 2px #bcbcbc7f;
+    display: inline-block;
+    transform: translate(-6px,0);
+    background-color:#ffe6a4;
+}
+.q4:hover{
+    background-color: transparent;
+    background-image: url(/door/image/q4.png);
+}
+.q6{
+    width: 189px;
+    height: 122px;
+    border-radius: 10px;
+    border:solid;
+    border-width: 0 3px 3px 1.5px;
+    border-color: #e3e3e3;
+    box-shadow:0px 0px 5px 2px #bcbcbc7f;
+    transform: translate(592px,-125px);
+    background-color: #ffebb4;
+}
+.q6:hover{
+    background-color: transparent;
+    background-image: url(/door/image/q6.png);
+}
+
+.people{
+    width: 75%;
+    margin:auto 8% auto 17% ;
+}
+.policy1{
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.ending{
+    font-family: 'qianyan';
+    margin: 150px 50px;
+    color: #343434;
+    font-size: 30px;
+    text-align: center;
+}
+.ending p{
+    margin: 100px auto;
+}
+
