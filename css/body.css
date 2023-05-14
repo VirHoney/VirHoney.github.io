@@ -30,7 +30,7 @@ body{
     margin: 150px auto;
 }
 
-.content span, .qianyan span{
+.content span, .qianyan span,.step span{
     background-color: #f5e091;
 }
 
@@ -48,6 +48,18 @@ body{
 }
 .content p{
     font-family:'zhengwen';
+}
+.chart{
+    font-family: 'nansong';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.note{
+    font-family: 'zhengwen';
+    font-size: 16px;
+    color: #888888;
+    text-align: center;
 }
 .chapter{
     margin-bottom: 50px;
@@ -124,7 +136,7 @@ h1{
 }
 .q1:hover{
     background-color: transparent;
-    background-image: url(../image/q1.png);
+    background-image: url(/door/image/q1.png);
 }
 
 .q2{
@@ -141,7 +153,7 @@ h1{
 }
 .q2:hover{
     background-color: transparent;
-    background-image: url(../image/q2.png);
+    background-image: url(/door/image/q2.png);
 }
 .q5{
     width: 435px;
@@ -156,7 +168,7 @@ h1{
 }
 .q5:hover{
     background-color: transparent;
-    background-image: url(../image/q5.PNG);
+    background-image: url(/door/image/q5.PNG);
 }
 .q3{
     width: 149px;
@@ -171,7 +183,7 @@ h1{
 }
 .q3:hover{
     background-color: transparent;
-    background-image: url(../image/q3.png);
+    background-image: url(/door/image/q3.png);
 }
 .q4{
     width: 189px;
@@ -187,7 +199,7 @@ h1{
 }
 .q4:hover{
     background-color: transparent;
-    background-image: url(../image/q4.png);
+    background-image: url(/door/image/q4.png);
 }
 .q6{
     width: 189px;
