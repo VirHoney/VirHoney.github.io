@@ -41,6 +41,7 @@
                 <i class="fa fa-ban fa-lg" aria-hidden="true"></i>
             </a>
             </li>
+
             <li>
             <a href="#chapter3" data-mfb-label="不尽如人意的门内世界" class="mfb-component__button--child">
                 <i class="fa fa-warning fa-lg" aria-hidden="true"></i>
@@ -95,61 +96,74 @@
 <p>
     根据中国人口普查年鉴数据，近三十年来，我国60岁以上人口在业人数持续增长，截止到2020年，已突破六千万，占到60岁以上人口总数的四分之一。<br><br>
     也就是说，我国每4个60岁以上老年人中，就有一位仍在工作。
-</p>
 <!-- echarts折线图 -->
-<div id="echarts" style="width: 600px;height:400px;margin:100px auto;"></div>
+<div class="chart">
+<p>三十年来，60岁以上的在业人口持续增长<br>
+</div>
+
+</p>
+
+<div id="echarts" style="width: 600px;height:400px;margin:10px auto;"></div>
 <script type="text/javascript">
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('echarts'));
 
     // 指定图表的配置项和数据
    var option = {
-       title: {
-           text: '中国人口普查年鉴'
-       },
-       tooltip: {
-           trigger: 'axis'
-       },
-       legend: {
-           data: [ '60+', '65+']
-       },
-       grid: {
-           left: '3%',
-           right: '4%',
-           bottom: '3%',
-           containLabel: true
-       },
-       toolbox: {
-           feature: {
-           saveAsImage: {}
-           }
-       },
-       xAxis: {
-           type: 'category',
-           boundaryGap: false,
-           data: ['1990', '2000', '2010',  '2020']
-       },
-       yAxis: {
-           type: 'value'
-       },
-       series: [
-           {
-           name: '60+',
-           type: 'line',
-           color:'#fdd556',
-           data: [2758.5, 4290.8, 5372.6, 5372.6]
-           },
-           {
-           name: '65+',
-           type: 'line',
-           color:'#858586',
-           data: [1213.6, 2207.1, 2490.4, 3753.2]
-           }
-       ]
-       };
+    title: {
+        text: ''
+    },
+    tooltip: {
+        trigger: 'axis',
+        valueFormatter: function (value) {
+        return value + '万'
+        }
+    },
+    legend: {
+        data: ['60岁以上在业人口数', '65岁以上在业人口数']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+        saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1990', '2000', '2010', '2020']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+        name: '60岁以上在业人口数',
+        type: 'line',
+        color: '#fdd556',
+        data: [2758.5, 4290.8, 5372.6, 5372.6]
+        },
+        {
+        name: '65岁以上在业人口数',
+        type: 'line',
+        color: '#858586',
+        data: [1213.6, 2207.1, 2490.4, 3753.2]
+        }
+    ]
+    };
+
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 </script>
+<div class="note">
+    数据出处：《2020年人口普查年鉴》<br>
+    注：鼠标悬停可查看具体数值<br>
+    </div><br><br>
 <p>
     为了了解现如今老年人的就业市场，我们爬取了前程无忧、BOSS直聘与猎聘三家招聘网站上招聘退休后大龄群体的岗位，合计883条。
 </p>
@@ -164,45 +178,46 @@
             <!-- 地图 -->
             <div class="step invisible"></div>
             <div class="step">
-            <p>网站中的岗位大多分布在经济较发达地区，如北京、长三角、珠三角等地，这些地区的工作岗位占数据总体的七成。</p>
+            <br><p>三家招聘网站所提供的岗位大多分布在<span>经济较发达地区</span>，如北京、长三角、珠三角等地，这些地区的工作岗位占数据总体的七成。</p>
+            <p style="color:#888888;font-size: 16px;">（鼠标悬停可查看网站招聘岗位在我国各省市自治区具体分布）</p><br>
             </div>   
             <!-- 岗位名称 -->
             <div class="step invisible"></div>
             <div class="step">
-            <p>从招聘岗位名称上看，工程技术人员、医务工作者、教师、财务与餐饮服务员是招聘网站上最常公布的招聘老龄群体的岗位。</p>
+            <br><p>从招聘岗位名称上看，<span>工程技术人员、医务工作者、教师、财务与餐饮服务员</span>是招聘网站上最常公布的招聘老龄群体的岗位。</p>
+            <p style="color:#888888;font-size: 16px;">（鼠标悬停可查看每个岗位的详情信息）</p><br>
             </div>
             <!-- 职业大类 -->
             <div class="step invisible"></div>
             <div class="step">
-            <p>从883个岗位中，我们分出了8个职业大类，分别有服务行业类（213）、医疗卫生类（149）、农业/工程专业技术类（145）、文化教育类（114）、经贸金融类（103）、高级管理类（71）、人事行政类（66）、生产制造施工类（22）。而这些岗位，指向了退休后大龄群体所能找到工作的两类属性。</p>
+            <p>从883个岗位中，我们分出了8个职业大类，分别有服务行业类（213）、医疗卫生类（149）、农业/工程专业技术类（145）、文化教育类（114）、经贸金融类（103）、高级管理类（71）、人事行政类（66）、生产制造施工类（22）。而这些岗位，<span>指向了退休后大龄群体所能找到工作的两类属性。</span></p>
             </div>
             <!-- 高经验 -->
             <div class="step invisible"></div>
             <div class="step">
-            <p>一类是需要高经验的专业技术或管理性岗位。如工程师、医生、教师等岗位。这些往往被评为“越老越吃香”的行业，占招聘网站为老龄群体提供岗位的大多数。</p>
+            <br><p style="line-height: 160%;">一类是需要丰富经验的专业技术或管理性岗位，如工程师、医生、教师等。<span>这些往往被评为“越老越吃香”的行业</span>，占招聘网站为老龄群体提供岗位的大多数。</p>
             </div>
             <!-- 服务类 -->
             <div class="step invisible"></div>
             <div class="step">
-            <p>另一类则是服务性行业或需要较多体力劳动的岗位，如餐厅服务员、保洁、技工、维修人员等，用人方往往将其称作“没有年轻人愿意来干的活”。</p>
+            <br><p>另一类则是服务性行业或需要较多体力劳动的岗位，如餐厅服务员、保洁、技工、维修人员等，用人方往往将其称作<span>“没有年轻人愿意来干的活”。</span></p>
             </div>
             <!-- 经验 -->
             <div class="step invisible"></div>
             <div class="step">
-            <p>而不同的岗位类型，所要求的经验、学历水平与对应的报酬也不尽相同。专业技术或管理性岗位中，有半数以上的岗位要求工作经验在5年以上，服务类和需要高体力劳动类的岗位往往对经验不作限制。</p>
+            <br><p>而不同的岗位类型，<span>所要求的经验、学历水平与对应的报酬也不尽相同。</span>专业技术或管理性岗位中，有半数以上的岗位要求工作经验在5年以上，服务类和需要高体力劳动类的岗位往往对经验不作限制。</p>
             </div>
             <!-- 学历 -->
             <div class="step invisible"></div>
             <div class="step">
-                <p>专业技术或管理性岗位中，有73.6%的岗位要求求职者的学历在大专以上，服务类和需要高体力劳动类的岗位中，仅三成岗位对求职者学历做出了要求。</p>
+            <br><p>专业技术或管理性岗位中，有73.6%的岗位要求求职者的学历在大专以上，服务类和需要高体力劳动类的岗位中，<span>仅三成岗位对求职者学历做出了要求。</span></p>
             </div>
             <!-- 薪资 -->
             <div class="step invisible"></div>
             <div class="step">
-                <p>对比8类岗位的月薪发现，服务行业类岗位月薪资分布多集中与5千以下，最低薪资为1100元；工程技术人员、医务工作者月薪资一般高于5千，最高可达8万；而用人方对需要丰富人脉与经验的高级管理岗位提供的薪资更加优渥，一般在万元以上，最高可达30万。</p>
+                <p>对比8类岗位的月薪发现，服务行业类岗位月薪资分布多集中于5千以下，最低薪资为1100元；工程技术人员、医务工作者月薪资一般高于5千，最高可达8万；而用人方对需要丰富人脉与经验的高级管理岗位提供的薪资更加优渥，一般在万元以上，最高可达30万。</p>
                 </div>
             <div class="step invisible"></div>
-
         </article>
     </section>
     <section>
@@ -229,7 +244,7 @@
       // 1. update height of step elements
       var stepH = Math.floor(window.innerHeight * 1);
       
-      step.style("height", 300 + "px");
+      step.style("height", 330 + "px");
 
       var figureHeight = window.innerHeight ;
       var figureMarginTop = (window.innerHeight - figureHeight) ;
@@ -301,27 +316,26 @@ iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
 <!-- 连续图结束 -->
 
 
-<div class="content animate__animated animate__fadeIn wow">
+<div class="content animate__animated animate__fadeIn wow" style="margin-top: 100px;">
     <p>
     <span>个人主观意愿和客观条件，共同推动着大龄打工人走上求职之路。</span><br><br>
     据前程无忧的调研报告数据，46.7%的老年人重返就业市场为寻求个人和社会价值。19%的求职者希望发挥一技之长，继续追求职业发展。<br><br>
     王立军夫妇今年六十多岁了，他们二人一个是专业的机电技术人员，一个在社区卫生院工作，都在自己的领域有着丰富的工作经验。虽然早已到了退休年龄，但他们仍在工作着。<br><br>
     像王立军夫妇这样的技术型人才，在专业岗位干了大半辈子，多年来积淀出的经验是他们工作经历中最宝贵的财富。<span>退休后，“发挥余热”成了他们最大的愿望。</span><br><br>
     在老年离退休人才网中，有众多求职者都在自述中提到“想发挥余热”，他们不计工作报酬的高低，以劳为乐，不想浪费自己的本领。<br><br>
-    </p>
+    杨宽今年50岁，一辈子都在建筑工地干活。干建筑是个体力活，一口气扛起几十斤的水泥，一天砌几百块砖，对杨宽来说都是家常便饭。常年高强度的体力劳动带来的是越来越差的身体状况，他开始考虑离开工地。但杨宽并不想就此停下，他想再找一个轻松点的活，继续工作。<br><br>
+    今年年后，杨宽在短视频平台上找到了一个在北京招快递分拣工的厂子，和中介简单定下工作后，他独自坐火车从老家山东来到了北京，那是他第一次离开家乡。<br><br>
+    家里人并不赞成杨宽来北京工作，但杨宽是个倔脾气。一个下午的功夫，他“说来就来了”。<br><br>
+</p>
     <!-- 自述图 -->
     <div class="flourish-embed flourish-hierarchy" data-src="visualisation/13653625">
         <script src="https://public.flourish.studio/resources/embed.js"></script>
     </div>
     <p style="color:#888888;text-align: center;font-size: 16px;">(鼠标悬停可查看典型叙述）</p><br>
     <p>
-        杨宽今年50岁，一辈子都在建筑工地干活。干建筑是个体力活，一口气扛起几十斤的水泥，一天砌几百块砖，对杨宽来说都是家常便饭。常年高强度的体力劳动带来的是越来越差的身体状况，他开始考虑离开工地。但杨宽并不想就此停下，他想再找一个轻松点的活，继续工作。<br><br>
-        今年年后，杨宽在短视频平台上找到了一个在北京招快递分拣工的厂子，和中介简单定下工作后，他独自坐火车从老家山东来到了北京，那是他第一次离开家乡。<br><br>
-        家里人并不赞成杨宽来北京工作，但杨宽是个倔脾气。一个下午的功夫，他“说来就来了”。<br><br>
         <span>在客观原因上，经济负担是最重要的一环。</span><br><br>
         今年3月，玉子在社交媒体上发布了一则帮妈妈陈欣找工作的帖子。<br><br>
     </p>
-
     <div class="photo">
         <img class="animate__animated animate__fadeIn wow" src="image/tiezi.png" width=50% />
     </div>
@@ -347,11 +361,10 @@ iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
     </div>  
     <p>
     根据2020年中国人口普查年鉴数据，除了广泛分布在农村的农林牧渔业，大龄打工人已经占据了制造业和建筑业的半壁江山。<br><br>
+    <div class="flourish-embed flourish-scatter" data-src="visualisation/13663490"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
     “武广江们”，是这个求职世界的大多数。<span>他们没有较高的学历和专业的技术，只能在工地和工厂打转，做着高重复性、高强度的体力活。</span><br><br>
     </p> 
-    <!-- 年龄限制图 -->
-    <div class="flourish-embed flourish-scatter" data-src="visualisation/13663490"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-</div>
+   </div>
 <br><br><br><br><br>
 <!-- chapter1结束 -->
 
@@ -360,9 +373,7 @@ iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
 
 <div class="content animate__animated animate__fadeIn wow">
     <p>
-    <span>年龄，是决定求职之门是否为他们打开的关键因素。</span><br><br>
-    <div class="flourish-embed flourish-scatter" data-src="visualisation/13743117" data-width="90%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-    <p style="color:#888888;text-align: center;font-size: 16px;">(鼠标悬停可查看详情）</p><br>
+    <span>年龄，是决定求职之门是否为他们打开的关键因素。</span><br>
     <p>
     <span>因为年龄大了，尽管自认为身体健康、吃苦耐劳，他们的求职之路仍面临着“有心无门”的窘境。</span><br><br>
     <span>期望的岗位已经早早为他们关上了大门，留给他们的，几乎都是那些“年轻人不愿意干”的工作。</span><br><br>
@@ -391,7 +402,7 @@ iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
         <img class="left3 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1.5s" data-wow-duration="2s" src="image/left3.jpg" width="40%" style="visibility: hidden; pointer-events: none;float: left;" />
         <img class="right4 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1s" data-wow-duration="2s" src="image/right3.jpg" width="50%" style="visibility: hidden; pointer-events: none;display: inline-block;margin-top: 180px" />
         <img class="text1 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1s" data-wow-duration="2s" src="image/text1.jpg" width="70%" style="visibility: hidden; pointer-events: none;display: inline-block;margin: 100px 50px 0 100px;" />
-        <img class="text2 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1s" data-wow-duration="2s" src="image/text2.jpeg" width="70%" style="visibility: hidden; pointer-events: none;display: inline-block;margin: 0px 50px 0 100px;" />
+        <img class="text2 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1.5s" data-wow-duration="2s" src="image/text2.jpeg" width="70%" style="visibility: hidden; pointer-events: none;display: inline-block;margin: 0px 50px 0 100px;" />
     </div>
         <div class="content animate__animated animate__fadeIn wow">
     <p>
@@ -400,6 +411,13 @@ iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
         64岁的武广江几乎是马驹桥年纪最大的打工人。在马驹桥找工的人们大都有一些相似的特征：他们爱穿深色衣服，衣服上附着着一层灰尘，沾着或多或少，难以洗干净的水泥点。土和灰也同样钻进他们的指缝，浸透进他们手掌的纹路里，经年累月形成灰色的皲裂。这都是常年的工地工作给予他们的。<br><br>
         在这里，武广江陈旧但干净的呢子外套显得有些不合群，也在暗示着，他已经近乎超过了能够被工地接纳的年纪，失去了这样“满身泥土”的机会。现在在马驹桥，武广江一个星期大概只有两三天能有活干。上次干的活是在一个正在拆迁的工地做临时保安，负责维护拆迁秩序，活不太累，但一天只有一百二十块钱。<br><br>
         <span>更重要的是，常年生活在马驹桥的人最近都有同一个感受——今年，活不好找了。</span><br><br>
+        “鱼泡网”是一家专门针对蓝领工人及日结零工的招聘平台，我们爬取了其上近一个月发布的1794条招聘信息。其中，有1728个岗位招聘男性，1344个岗位招聘女性。<br><br>
+        在所有岗位招聘信息中，超过六成的招聘信息对年龄提出了明确的限制。<br><br>
+        在这些明确要求年龄的岗位中，仅有不足2成岗位的最大年龄限制在45岁以上。<br><br>
+        对于主要从事建造业、制造业的蓝领劳动者群体来说，40已经成为最大的就业门槛。
+         <!-- 年龄限制图 -->
+         <p style="color:#888888;text-align: center;font-size: 16px;margin-bottom: -5px;">(鼠标悬停可查看详情）</p>
+         <div class="flourish-embed flourish-scatter" data-src="visualisation/13743117" data-width="90%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
         前两年，在马驹桥根本不愁没活干，很多人都能找到“八个小时赚三百多块钱”的工作。今年为什么突然招工的少了，那里的人也说不清，但他们认为总和经济发展脱不了干系。<br><br>
         可干的活少了之后，工厂都倾向于直接找熟人干活，来劳务市场大范围招人的情况越来越少，“现在我们的用工群里都没什么招聘信息发，有熟人，谁愿意从这里找不知道靠不靠谱的呢。”<br><br>
         前几年在马驹桥，武广江也能接到各种各样的活，他特别提到，他还当过好几次群众演员。当群演是他最喜欢干的活之一，“一天就两三个小时，也不累，盒饭里有好几个鸡腿，矿泉水随便喝。”他还能模仿出当时“拍戏”时，自己做过的拿枪的动作。虽然动作不太标准，但提起这段回忆，他浑浊的眼睛里一下子有了光亮，憨笑着，仿佛手里真的有一把枪。但现在，在马驹桥这样的劳务市场，群演的工作已经完全没有，还有很多工作，也像群演一样悄声消失。<br><br>
@@ -484,7 +502,6 @@ iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
 作为老龄化严重国家，日本推出的相关政策十分完善。早在20世纪70年代，日本就制定了促进中老年人就业的特别措施法，该法律历经多次完善修订，成为日本现行的“老年人稳定就业法”（日文直译为《高年龄者雇佣安定法》）。2020年3月，这部法律做了新的修订，增加了用人单位在确保满足老年人到70岁为止享有就业机会，为老龄人口就业提供了坚实的法律保障。<br><br>
 在英国，老年人口打零工的现象较为普遍，各地政府针对当地不同程度的货运司机人力短缺、新冠疫情导致的公立医疗机构医护人员短缺，以及公立学校师资不足等问题，呼吁有相关背景的退休人员重新上岗，帮助国家应对危机，也在一定程度上解决了大龄人口的工作问题。<br><br>
 </p>
-<!-- 国外政策梳理图 缺失！ -->
 <p>
 有国外先例的辅助，也许能够帮助我们更好地解决我国的大龄人口就业问题。<br><br>
 </p>
