@@ -16,18 +16,45 @@ body{
     margin: auto 0;
 }
 
-.cover{
-    margin:0 0 100px 0;
+.chapter1{
+    margin:0;
+    background-image: url(../image/chapter1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+}
+.chapter2{
+    margin:0;
+    background-image: url(../image/chapter2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+}
+.chapter3{
+    margin:0;
+    background-image: url(../image/chapter3.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+}
+.chapter4{
+    margin:0;
+    background-image: url(../image/chapter4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
 }
 .qianyan{
     font-family: 'qianyan';
-    margin: 150px auto;
+    margin: auto;
+    padding-top: 100px;
     color: #343434;
     font-size: 35px;
     text-align: center;
 }
 .qianyan p{
-    margin: 150px auto;
+    margin: auto;
+    line-height: 5em;
 }
 
 .content span, .qianyan span,.step span{
