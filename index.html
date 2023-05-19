@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/story.css">
     <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href = "css/timeline.min.css" rel = "stylesheet" />   
     <script src="js/ScrollMagic.js"></script>
     <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
     <script src="js/wow.min.js"></script>
@@ -18,9 +19,17 @@
     <script src="js/d3.min.js" language="javascript"></script>
     <script src="js/jquery.color.js" language="javascript"></script>
     <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <script src = "js/timeline.min.js" ></script> 
     <script>
         new WOW().init();
     </script>
+    <script>
+        timeline(document.querySelectorAll('#timeline-vertical'), {
+            verticalStartPosition: 'right',
+            verticalTrigger: '150px'
+        });
+    </script>
+ 
 </head>
 
 <body>
@@ -62,12 +71,70 @@
     </ul>
 <!-- 导航栏结束 -->
 
+<div class="contact-info">
+    <div id="turnto1" class="option">
+        
+      <i>
+            <img src="PICS/ICON1.png" style="width: 70%;height: 65%;position: absolute; left: 15%;top: 18%;">
+            </i>
+        <div class="text">看见，家务劳动</div>
+       
+      
+    </div>
+
+    <div id="turnto2" class="option">
+       
+            <i>
+            <img onclick="onTopClick1();" src="image/XIYIJIICON.png" style="width: 74%;height: 74%;position: absolute; left: 13%;top: 13%;">
+            </i>
+        <div class="text">大 幕 紧 闭</div>
+       
+      
+    </div>
+
+    <div id="turnto3" class="option">
+       
+      <i>
+        <img src="image/书包ICON.png" style="width: 100%;height: 100%;position: absolute; left: 0%;top: 0%;">
+            </i>
+        <div class="text">幕 后 彷 徨</div>
+      
+      
+    </div>
+      
+    <div id="turnto4" class="option">
+     
+        <i>
+        <img src="image/GUOICON.png" style="width: 70%;height: 70%;position: absolute; left: 18%;top: 15%;">
+         </i>
+        <div class="text">呼 声 回 响</div>
+      
+      
+    </div>
+      
+    <div id="turnto5" class="option">
+    
+        <i>
+        <img src="image/PINTUICON.png" style="width: 78%;height: 58%;position: absolute; left: 11%;top: 23%;">
+         </i>
+        
+        <div class="text">光 束 渐 起</div>
+      
+      
+    </div>	
+
+  </div>
+
 <!-- cover -->
-<img class="cover animate__animated  animate__fadeIn wow" id="cover" src="image/cover.png" width=100% style="visibility: hidden; pointer-events: none; display: block;" />
+<div class="cover animate__animated  animate__fadeOut wow" data-wow-duration="2s" data-wow-offset: style="text-align:center;margin: auto 0;height: 800px;">   
+</div>
+<div class="cover1 animate__animated  animate__fadeIn wow" style="text-align:center;margin: auto 0;height: 800px;">   
+</div>
+<!-- <img class="cover animate__animated  animate__fadeIn wow" id="cover" src="image/cover.png" width=100%  style="visibility: hidden; pointer-events: none; display: block;position: fixed;" /> -->
 <!-- cover结束 -->
 
 <!-- 前言 -->
-<div class="qianyan">
+<!-- <div class="qianyan">
     <div class="qianyan1 animate__animated  animate__fadeIn wow" data-wow-duration="1s" data-wow-delay="1s">
         <p> 50岁，下半场人生应当如何度过？</p>
     </div>
@@ -87,7 +154,7 @@
         <p>他们在年龄的高压线下，尝试叩开求职世界的大门，求一条谋生路。</p>   
         <br><br>
     </div>
-</div>
+</div> -->
 <!-- 前言结束 -->
 
 <!-- chapter1 -->
@@ -519,12 +586,63 @@ iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
 2021年起，我国政府陆续出台相关政策，推动发挥“银发红利”，鼓励大龄人口、低龄老年人再就业，并完善相关就业保障。<br><br>
 2022年2月，国务院印发关于“十四五”国家老龄事业发展和养老服务体系规划的通知，通知第二十一条重点提到了老年人的再就业问题，提出要加强老年人老年人就业服务、促进老年人社会参与，涉及到职业介绍、职业技能培训、社会组织规范化等多个方面。<br><br>
 </p>
+
+<!-- 时间轴 -->
+<div class="timeline" id="timeline-vertical">
+    <div class="timeline__wrap">
+        <div class="timeline__items">
+            <div class="timeline__item animate__animated timeline__item--right animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2003年</h2>
+                    <h3>全国老龄委“银龄行动”</h3>
+                    <p>倡导组织全国大中城市离退休老年知识分子向经济欠发达地区开展智力援助行动。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--left  animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2006年</h2>
+                    <h3>《中国老龄事业发展“十一五”规划》</h3>
+                    <p>第一次将“老有所为”的对象推及到广大老年人群，并开始关注老年就业问题。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--right animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2011年</h2>
+                    <h3>《中国老龄事业发展“十二五”规划》</h3>
+                    <p>首次提出注重开发老年人力资源，鼓励老年人参与经济发展与社会公益。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--left  animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2017年</h2>
+                    <h3>《“十三五”国家老龄事业发展和养老体系及建设规划》</h3>
+                    <p>首次大篇幅论述老年就业，并提到要对有需要的老年人进行创业培训。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--right animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2021年</h2>
+                    <h3>国务院《关于加强新时代老龄工作的意见》</h3>
+                    <p>指出充分发挥低龄老年人作用，探索适合老年人灵活就业的模式。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--left  animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2022年</h2>
+                    <h3>国务院《关于印发“十四五”国家老龄事业发展和养老服务体系规划的通知》</h3>
+                    <p>鼓励各地建立老年人才信息库，为有劳动意愿的老年人提供再就业服务；健全相关法律法规与政策，保障老年人劳动就业权益与创业权益。</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<img class="policy1 animate__animated  animate__fadeIn wow" src="image/policy1.png" width=100% style="visibility: hidden; pointer-events: none;" />
+</div>
+
 
 <div class="content animate__animated animate__fadeIn wow">
 <p>
+<br><br>
 <span>但“武广江们”、“陈欣们”的打工历程，仍然困难重重。</span>背负着生活的压力，年龄已经是他们再努力也迈不过的红线，求职的大门已然难以推开，门内的世界也充满危险。<br><br>
 对于老年人求职困难的问题，中国人民大学公共管理学院社会保障研究所的陈鹤副教授认为，<span>在很难改变就业大环境严峻的情况下，政府应当从体力要求、技术要求等方面研究哪些职位适合老年人，并采取一些政策鼓励企业雇佣老年人。</span>与此同时，老年人个体也需要对当前的就业形势有清晰的认识，做好个人职业定位。毕竟在经济新常态情况下，除了老年人，还有新毕业的大学生也正在投身就业浪潮。<br><br>
 另一方面，陈鹤副教授以退休返聘人员为例指出，工伤保险是需要关注的一个重要问题，他们本身处于退休身份，很难在我国的工伤保险中参保。这一问题在司法实践中差异也较大，需要国家调整相关政策。<br><br>
