@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>难以叩开的求职之门</title>
+    <link rel="shortcut icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/mfb.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href = "css/timeline.min.css" rel = "stylesheet" />  
+   
+ 
+</head>
+
+<body>
+
+    
+    <!-- <ul id="menu" class="mfb-component--tl mfb-zoomin" data-mfb-toggle="hover">
+        <li class="mfb-component__wrap">
+        <a class="mfb-component__button--main">
+            <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+        </a>
+        <ul class="mfb-component__list">
+            <li>
+            <a href="#chapter1" data-mfb-label="大龄打工人，站在求职门前" class="mfb-component__button--child">
+                <i class="fa fa-street-view fa-lg fa-fw" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#chapter2" data-mfb-label="选择叩门，年龄是第一道红线" class="mfb-component__button--child">
+                <i class="fa fa-ban fa-lg" aria-hidden="true"></i>
+            </a>
+            </li>
+
+            <li>
+            <a href="#chapter3" data-mfb-label="不尽如人意的门内世界" class="mfb-component__button--child">
+                <i class="fa fa-frown-o fa-lg" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+            <a href="#chapter4" data-mfb-label="如何修复这扇门？" class="mfb-component__button--child">
+                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+                <a href="#cover" data-mfb-label="回到顶部" class="mfb-component__button--child">
+                <i class="fa fa-caret-up fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        </li>
+    </ul> -->
+
+<!-- 导航栏 --> 
+<div class="nav">
+    <div id="turnto1" class="option">
+      <i>
+            <a href="#chapter1">
+            <img src="image/option1.png" style="width:75%;height: 75%;position: absolute;left:13%;top: 15%;">
+            </i>
+        <div class="text">大龄打工人,站在求职门前</div>
+    </a> 
+    </div>
+
+    <div id="turnto2" class="option">
+        <a href="#chapter2">
+            <i>
+            <img onclick="onTopClick1();" src="image/option2.png" style="width: 74%;height: 74%;position: absolute; left: 18%;top: 15%;">
+            </i>
+        <div class="text">年龄是第一道红线</div>
+    </a>
+    </div>
+
+    <div id="turnto3" class="option">
+        <a href="#chapter3">
+            <i>
+            <img src="image/option3.png" style="width: 70%;height: 70%;position: absolute; left: 15%;top: 15%;">
+            </i>
+            <div class="text">不尽如人意的门内世界</div>
+        </a> 
+    </div>
+      
+    <div id="turnto4" class="option">
+        <a href="#chapter4">
+            <i>
+            <img src="image/option4.png" style="width: 70%;height: 70%;position: absolute; left: 15%;top: 15%;">
+            </i>
+            <div class="text">如何让大门为他们敞开</div>
+        </a> 
+    </div>
+
+  </div>
+<!-- 导航栏结束 -->
+
+<!-- cover -->
+<div class="cover" style="text-align:center;margin: auto 0;height: 100vh;">   
+</div>
+<div class="cover1" style="text-align:center;margin: auto 0;height: 100vh;">   
+</div>
+
+
+<!-- <img class="cover animate__animated  animate__fadeIn wow" id="cover" src="image/cover.png" width=100%  style="visibility: hidden; pointer-events: none; display: block;position: fixed;" /> -->
+<!-- cover结束 -->
+
+<!-- 前言 -->
+<div class="qianyan">
+    <div class="qianyan1 animate__animated  animate__fadeIn wow" data-wow-duration="1s" data-wow-delay="1s">
+        <p> 50岁，下半场人生应当如何度过？</p>
+    </div>
+    <div class="qianyan2 animate__animated animate__fadeIn wow" data-wow-duration="1.5s" data-wow-delay="1.5s">
+        <p>建筑工人杨宽给出的答案是从熟悉的小城到陌生的北京，不断"<span>启程</span>"。</p>
+    </div>
+    <div class="qianyan4 animate__animated animate__fadeIn wow" data-wow-duration="2s" data-wow-delay="2s">
+        <p>退休财务陈欣给出的答案是从擅长的岗位到不擅长的岗位，不断"<span>碰壁</span>"。</p>
+    </div>
+    <div class="qianyan3 animate__animated animate__fadeIn wow" data-wow-duration="2.5s" data-wow-delay="2.5s">
+        <p>临时工武广江给出的答案是从马驹桥零工市场到大柳树夜市，不断"<span>流动</span>"。</p>
+    </div>
+    <div class="qianyan5 animate__animated animate__fadeIn wow" data-wow-duration="2.5s" data-wow-delay="2.5s">
+        <p>在我国，有很多的“武广江”、“杨宽”和“陈欣”。</p>
+    </div>
+    <div class="qianyan6 animate__animated animate__fadeIn wow" data-wow-duration="2.5s" data-wow-delay="2.5s">
+        <p>他们在年龄的高压线下，尝试叩开求职世界的大门，求一条谋生路。</p>   
+        <br><br>
+    </div>
+</div>
+<!-- 前言结束 -->
+
+<!-- chapter1 -->
+<div class="chapter1" id="chapter1" style="text-align:center;margin: auto 0;height: 800px;">
+    <br><br><br>
+</div>
+<!-- <img class="chapter animate__animated  animate__fadeIn wow" id="chapter1" src="image/chapter1.png" width=100% style="visibility: hidden; pointer-events: none;" /> -->
+
+<div class="content animate__animated animate__fadeIn wow">
+<p> 
+    <br><br><br>
+    根据中国人口普查年鉴数据，近三十年来，我国60岁以上人口在业人数持续增长，截止到2020年，已突破六千万，占到60岁以上人口总数的四分之一。<br><br>
+    也就是说，我国每4个60岁以上老年人中，就有一位仍在工作。
+<!-- echarts折线图 -->
+<div class="chart">
+<p>三十年来，60岁以上的在业人口持续增长<br>
+</div>
+</p>
+
+<div id="echarts" style="width: 600px;height:400px;margin:10px auto;"></div>
+
+<div class="note">
+    数据出处：《2020年人口普查年鉴》<br>
+    注：鼠标悬停可查看具体数值<br>
+    </div><br><br>
+<p>
+    为了了解现如今老年人的就业市场，我们爬取了前程无忧、BOSS直聘与猎聘三家招聘网站上招聘退休后大龄群体的岗位，合计883条。
+</p>
+</div>
+<!-- 连续图 -->
+<main> 
+    <section id="scrolly">
+        <figure style="height: 600px;top: 0px;">
+            <iframe src='https://flo.uri.sh/story/1911968/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:825px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+        </figure>
+        <article>
+            <!-- 地图 -->
+            <div class="step invisible"></div>
+            <div class="step">
+            <br><p>三家招聘网站所提供的岗位大多分布在<span>经济较发达地区</span>，如北京、长三角、珠三角等地，这些地区的工作岗位占数据总体的七成。</p>
+            <p style="color:#888888;font-size: 16px;">（鼠标悬停可查看网站招聘岗位在我国各省市自治区具体分布）</p><br>
+            </div>   
+            <!-- 岗位名称 -->
+            <div class="step invisible"></div>
+            <div class="step">
+            <br><p>从招聘岗位名称上看，<span>工程技术人员、医务工作者、教师、财务与餐饮服务员</span>是招聘网站上最常公布的招聘老龄群体的岗位。</p>
+            <p style="color:#888888;font-size: 16px;">（图中每一个方块代表一个招聘岗位，鼠标悬停可查看每个岗位的详情信息）</p><br>
+            </div>
+            <!-- 职业大类 -->
+            <div class="step invisible"></div>
+            <div class="step">
+            <p>从883个岗位中，我们分出了8个职业大类，分别有服务行业类（213）、医疗卫生类（149）、农业/工程专业技术类（145）、文化教育类（114）、经贸金融类（103）、高级管理类（71）、人事行政类（66）、生产制造施工类（22）。而这些岗位，<span>指向了退休后大龄群体所能找到工作的两类属性。</span></p>
+            </div>
+            <!-- 高经验 -->
+            <div class="step invisible"></div>
+            <div class="step">
+            <br><p style="line-height: 160%;">一类是需要丰富经验的专业技术或管理性岗位，如工程师、医生、教师等。<span>这些往往被评为“越老越吃香”的行业</span>，占招聘网站为老龄群体提供岗位的大多数。</p>
+            </div>
+            <!-- 服务类 -->
+            <div class="step invisible"></div>
+            <div class="step">
+            <br><p>另一类则是服务性行业或需要较多体力劳动的岗位，如餐厅服务员、保洁、技工、维修人员等，用人方往往将其称作<span>“没有年轻人愿意来干的活”。</span></p>
+            </div>
+            <!-- 经验 -->
+            <div class="step invisible"></div>
+            <div class="step">
+            <br><p>而不同的岗位类型，<span>所要求的经验、学历水平与对应的报酬也不尽相同。</span>专业技术或管理性岗位中，有半数以上的岗位要求工作经验在5年以上，服务类和需要高体力劳动类的岗位往往对经验不作限制。</p>
+            </div>
+            <!-- 学历 -->
+            <div class="step invisible"></div>
+            <div class="step">
+            <br><p>专业技术或管理性岗位中，有73.6%的岗位要求求职者的学历在大专以上，服务类和需要高体力劳动类的岗位中，<span>仅三成岗位对求职者学历做出了要求。</span></p>
+            </div>
+            <!-- 薪资 -->
+            <div class="step invisible"></div>
+            <div class="step">
+                <p>对比8类岗位的月薪发现，服务行业类岗位月薪资分布<span>多集中于5千以下</span>，最低薪资为1100元；工程技术人员、医务工作者月薪资<span>一般高于5千</span>，最高可达8万；而用人方对需要丰富人脉与经验的高级管理岗位提供的薪资更加优渥，<span>一般在万元以上</span>，最高可达30万。</p>
+                </div>
+            <div class="step invisible"></div>
+        </article>
+    </section>
+    <section>
+    </section>
+    </main>
+<!-- <div class='debug'></div> -->
+
+<!-- 连续图结束 -->
+
+
+<div class="content animate__animated animate__fadeIn wow" style="margin-top: 100px;">
+    <p>
+    <span>个人主观意愿和客观条件，共同推动着大龄打工人走上求职之路。</span><br><br>
+    据前程无忧的调研报告数据，46.7%的老年人重返就业市场为寻求个人和社会价值。19%的求职者希望发挥一技之长，继续追求职业发展。<br><br>
+    王立军夫妇今年六十多岁了，他们二人一个是专业的机电技术人员，一个在社区卫生院工作，都在自己的领域有着丰富的工作经验。虽然早已到了退休年龄，但他们仍在工作着。<br><br>
+    像王立军夫妇这样的技术型人才，在专业岗位干了大半辈子，多年来积淀出的经验是他们工作经历中最宝贵的财富。<span>退休后，“发挥余热”成了他们最大的愿望。</span><br><br>
+    另外一些大龄打工人，他们虽然没有“发挥余热”的愿望，但也并不想在“还能干”的年纪停下脚步。<br><br>
+    杨宽今年50岁，一辈子都在建筑工地干活。干建筑是个体力活，一口气扛起几十斤的水泥，一天砌几百块砖，对杨宽来说都是家常便饭。常年高强度的体力劳动带来的是越来越差的身体状况，他开始考虑离开工地。但杨宽并不想就此停下，他想再找一个轻松点的活，继续工作。<br><br>
+    今年年后，杨宽在短视频平台上找到了一个在北京招快递分拣工的厂子，和中介简单定下工作后，他独自坐火车从老家山东来到了北京，那是他第一次离开家乡。<br><br>
+    家里人并不赞成杨宽来北京工作，但杨宽是个倔脾气。一个下午的功夫，他“说来就来了”。<br><br>
+    在老年离退休人才网中，众多求职者详细描述了个人的工作履历，强调了个人的优点，<span>表达了想继续工作的强烈愿望。</span><br><br>
+   </p>
+    <!-- 自述图 -->
+    <div class="flourish-embed flourish-hierarchy" data-src="visualisation/13653625">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+    <p style="color:#888888;text-align: center;font-size: 16px;">
+        (鼠标悬停可查看典型叙述）<br>
+        注：离退休人才网是为广大离退休人才实现再就业服务的人才交流平台。<br>
+        数据来源自2017-2023年间离退休人才网退休人才库中求职者的自我评价，爬取时间为2023年4月7日。<br>
+    </p>
+    <p>
+        <br><br><span>在客观原因上，经济负担是最重要的一环。</span><br><br>
+        今年3月，玉子在社交媒体上发布了一则帮妈妈陈欣找工作的帖子。<br><br>
+    </p>
+    <div class="photo">
+        <img class="animate__animated animate__fadeIn wow" src="image/tiezi.png" width=50% />
+    </div>
+    <p>
+        从2001年起，陈欣一直一家制造业公司做财务工作，今年刚刚退休。<br><br>
+        五年前，陈欣和丈夫感情破裂。那时，玉子还在申请国外留学，二人约定各自承担一半玉子的学费。但就在玉子申请成功后，丈夫突然“人间蒸发”，彻底断了联系。<br><br>
+        为了让玉子安心读书，陈欣一个人担起了玉子的学费，一年就需要20多万。沉重的经济负担不允许陈欣的工作出现“空窗期”，正式退休的前几个月，她就已经开始海投找工作了。 <br><br>
+        <span>“找工作这个事挺难说的，越是急着想找，越是找不到。”</span><br><br>
+        玉子在帖子称她的妈妈陈欣为热爱生活、心态年轻的“女超人”，但在找工作这件事上，陈欣并没有像超人一样百战百胜。现实往往更加残酷，“处处碰壁”，是她给自己的大龄求职路总结出的“四字箴言”。<br><br>
+        众多的大龄打工人，都对“碰壁”这件事深有体会，武广江也是其中之一。<br><br>
+        下过雨的清晨，空气中的潮气还未散去，武广江站在马驹桥的街边“等活”。<br><br>
+        马驹桥聚集着来自五湖四海的打工者，是北京最大的劳务市场。凌晨四五点是马驹桥最热闹的时刻，做日结零工的人们早早聚集在马驹桥的十字路口，寻找一天的活计。<br><br>
+        <span>小小的十字路口，在凌晨四点最多能塞下一千多人。</span><br><br>
+        武广江却远离拥挤的十字路口，独自站在街边一家商铺的檐下。<br><br>
+        他的眼睛有些浑浊，戴着一顶普通得不能再普通的深蓝色平沿帽，身上的呢子料外套和这身穿搭显得有些违和，衣服边缘有些发黑泛旧，应该已经穿了很多年。<br><br>
+        马驹桥的人们很“自来熟”，今天有没有找到活、赚了多少钱、最近有什么活干，是他们最常聊的话题。热络的环境下，武广江显得有些笨拙，甚至“不合群”。<br><br>
+        鬓角微微露出的白发也暗暗证明，武广江的确是有些“不合群”的。<br><br>
+        <span>在马驹桥找零活的人们大多三四十岁，但武广江今年已经64岁，在这里算得上是高龄。</span>七八年前，经亲戚介绍，他从老家辽宁来到北京，开始做临时工。昌平、丰台、海淀、朝阳，北京的几个区，他都去过，保安、保洁、快递分拣，各种临时工的活，他也几乎都做过。<br><br>
+        <span>他说他在北京，是“流动”的。</span><br><br>
+        现在在马驹桥，武广江一周只有两三天能找到活干。每周的周二、周六和周日，他还会去北京有名的大柳树夜市摆地摊，卖点从二手市场淘来的数据线、充电宝等小玩意。这是前年他为了维持生计，给自己发展出的副业。随着马驹桥的管理越来越严格，他把摆摊“阵地”换到了大柳树夜市，那里人流量多，东西也更好卖，生意好的时候能赚到三百多块钱，但差的时候可能本钱都赚不来。<br><br>
+        武广江身后的灰色双肩包里装着他还没有卖出去的商品。他转身翻出一个麦克风形状的小型蓝牙音箱，最顶部扩音的海绵颜色有些发暗，显露出岁月的痕迹。<span>不需要摆摊的时候，他就背着这些还未卖出的小商品一起“流动”，找活干。</span><br><br>
+    </p>
+    <div class="photo">
+        <img class="animate__animated animate__fadeIn wow" id="image" src="image/wuguangjiang.png" width=80% />
+    </div>  
+    <p>
+    根据2020年中国人口普查年鉴数据，除了广泛分布在农村的农林牧渔业，大龄打工人已经占据了制造业和建筑业的半壁江山。<br><br>
+    </p>
+    <div class="flourish-embed flourish-scatter" data-src="visualisation/13663490"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    <p>
+    <br><br>“武广江们”，是这个求职世界的大多数。<span>他们没有较高的学历和专业的技术，只能在工地和工厂打转，做着高重复性、高强度的体力活。</span><br><br>
+    </p> 
+</div>
+<br><br><br><br><br>
+<!-- chapter1结束 -->
+
+<!-- chapter2 -->
+<div class="chapter2" id="chapter2" style="text-align:center;margin: auto 0;height: 800px;">
+    <br><br><br>
+</div>
+<!-- <img class="chapter animate__animated  animate__fadeIn wow" id="chapter2" src="image/chapter2.png" width=100% style="visibility: hidden; pointer-events: none;" /> -->
+
+<div class="content animate__animated animate__fadeIn wow">
+    <p>
+    <br>
+    <span>年龄，是决定求职之门是否为他们打开的关键因素。</span><br><br>
+    <span>因为年龄大了，尽管自认为身体健康、吃苦耐劳，他们的求职之路仍面临着“有心无门”的窘境。</span><br><br>
+    期望的岗位已经早早为他们关上了大门，留给他们的，几乎都是那些<span>“年轻人不愿意干”</span>的工作。<br><br>
+    因为干了很多年财务，最初找工作时，陈欣也想再找一份财务工作。但财务岗位的年龄限制一般在50岁以下，一些稍大一点的公司，一看到简历上陈欣的年龄，就直接把她淘汰掉了。<br><br>
+    海投了很久之后，陈欣终于进入了一家很小的公司做财务工作。但是工作了两天，她发现这家公司的运作不太正规，干了两天就离开了。后来她不再执着于找自己擅长的财务工作，开始“广撒网”，寻找能够接纳她的工作岗位。<br><br>
+    家政、整理收纳、育儿辅食、政府补贴……能试的她都去试了一遍，但却处处碰壁，到现在也没找到一份合适的工作。<br><br>
+    事实上，陈欣的期望职位只需要满足三个条件：朝九晚六、正规、工资说得过去。<br><br>
+    在马驹桥，各个劳务中介所贴出的招工信息里，年龄限制也格外醒目。<br><br>
+    </p>
+    <div class="photo">
+        <img class="animate__animated animate__fadeIn wow" id="image" src="image/post.jpeg" width=80% />
+    </div>
+    <p>
+        张远杰在马驹桥的一家劳务中介工作了近十年，他将马驹桥现有的求职者划分为三类：<br><br>
+        “一类是年轻人，18-40岁，靠着劳务中介或者其他途径，可以进厂，干长期工；<br><br>
+        一类40-60岁，年龄太大了，没法进厂，等在路边，有活就干；<br><br>
+        还有一类就是只想做日结不想做长期的，干一天，歇三天。”<br><br>
+        在相对自由的劳务市场上，留给大龄打工人的选择也寥寥无几：<br><br>
+    </p>
+</div>
+<div class="people">
+        <div class="people1" style="display:block;">
+            <img class="left1 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1s" data-wow-duration="2s" src="image/left1.jpg" width="50%" style="visibility: hidden; pointer-events: none;float: left;" />
+            <img class="right1 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1s" data-wow-duration="2s" src="image/right1.jpg" width="40%" style="visibility: hidden; pointer-events: none;display: inline-block;margin-top: 150px;" />
+        </div>
+        <div class="people2" style="display:block;">
+            <img class="left2 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="2s" data-wow-duration="2s" src="image/left2.jpg" width="50%" style="visibility: hidden; pointer-events: none;float: left;margin-top: 180px" />
+            <img class="right2 animate__animated  animate__fadeIn wow"  data-wow-offset="10" data-wow-delay="1.5s" data-wow-duration="2s" src="image/right2.jpg" width="50%" style="visibility: hidden; pointer-events: none;display: inline-block;" />
+        </div>
+        <div class="people2" style="display: block;">
+            <img class="left3 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1.5s" data-wow-duration="2s" src="image/left3.jpg" width="40%" style="visibility: hidden; pointer-events: none;float: left;" />
+            <img class="right4 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1s" data-wow-duration="2s" src="image/right3.jpg" width="50%" style="visibility: hidden; pointer-events: none;display: inline-block;margin-top: 180px" />
+        </div>
+        
+        <img class="text1 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1s" data-wow-duration="2s" src="image/text1.jpg" width="70%" style="visibility: hidden; pointer-events: none;display: inline-block;margin: 100px 50px 0 100px;" />
+        <img class="text2 animate__animated  animate__fadeIn wow" data-wow-offset="10" data-wow-delay="1.5s" data-wow-duration="2s" src="image/text2.jpeg" width="70%" style="visibility: hidden; pointer-events: none;display: inline-block;margin: 0px 50px 0 100px;" />
+</div>
+        <div class="content animate__animated animate__fadeIn wow">
+    <p>
+        <br>
+        杨宽按照约定来到北京丰台做快递分拣工作，才知道厂子对快递分拣工的年龄要求是50岁以下。杨宽刚好50岁，对方稍微把年龄限制放宽了一些，他才获得了这个工作机会。<br><br>
+        64岁的武广江几乎是马驹桥年纪最大的打工人。在马驹桥找工的人们大都有一些相似的特征：他们爱穿深色衣服，衣服上附着着一层灰尘，沾着或多或少，难以洗干净的水泥点。土和灰也同样钻进他们的指缝，浸透进他们手掌的纹路里，经年累月形成灰色的皲裂。这都是常年的工地工作给予他们的。<br><br>
+        在这里，武广江陈旧但干净的呢子外套显得有些不合群，也在暗示着，他已经近乎超过了能够被工地接纳的年纪，失去了这样“满身泥土”的机会。现在在马驹桥，武广江一个星期大概只有两三天能有活干。上次干的活是在一个正在拆迁的工地做临时保安，负责维护拆迁秩序，活不太累，但一天只有一百二十块钱。<br><br>
+        <span>更重要的是，常年生活在马驹桥的人最近都有同一个感受——今年，活不好找了。</span><br><br>
+        “鱼泡网”是一家专门针对蓝领工人及日结零工的招聘平台，我们爬取了其上近一个月发布的1794条招聘信息。其中，有1728个岗位招聘男性，1344个岗位招聘女性。<br><br>
+        在所有岗位招聘信息中，超过六成的招聘信息对年龄提出了明确的限制。<br><br>
+        在这些明确要求年龄的岗位中，仅有不足2成岗位的最大年龄限制在45岁以上。<br><br>
+        对于主要从事建造业、制造业的蓝领劳动者群体来说，40已经成为最大的就业门槛。<br><br>
+    </p>
+         <!-- 年龄限制图 -->
+         <p style="color:#888888;text-align: center;font-size: 16px;margin-bottom: -5px;">(鼠标悬停可查看详情）</p>
+         <div class="flourish-embed flourish-scatter" data-src="visualisation/13743117" data-width="90%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    <p>
+        前两年，在马驹桥根本不愁没活干，很多人都能找到“八个小时赚三百多块钱”的工作。今年为什么突然招工的少了，那里的人也说不清，但他们认为总和经济发展脱不了干系。<br><br>
+        可干的活少了之后，工厂都倾向于直接找熟人干活，来劳务市场大范围招人的情况越来越少，“现在我们的用工群里都没什么招聘信息发，有熟人，谁愿意从这里找不知道靠不靠谱的呢。”<br><br>
+        前几年在马驹桥，武广江也能接到各种各样的活，他特别提到，他还当过好几次群众演员。当群演是他最喜欢干的活之一，“一天就两三个小时，也不累，盒饭里有好几个鸡腿，矿泉水随便喝。”他还能模仿出当时“拍戏”时，自己做过的拿枪的动作。虽然动作不太标准，但提起这段回忆，他浑浊的眼睛里一下子有了光亮，憨笑着，仿佛手里真的有一把枪。但现在，在马驹桥这样的劳务市场，群演的工作已经完全没有，还有很多工作，也像群演一样悄声消失。<br><br>
+        <span>当“找工难”成为劳务市场的普遍现象，像武广江、杨宽一样的大龄打工人，只会面临更加严峻的处境。</span><br><br>
+        <span>求职的大门何时为他们打开，永远都是个未知数。</span><br><br>
+    </p>
+</div>
+
+<!-- chapter2结束 -->
+
+<!-- chapter3 -->
+<div class="chapter3" id="chapter3" style="text-align:center;margin: auto 0;height: 800px;">
+    <br><br><br>
+</div>
+<!-- <img class="chapter animate__animated  animate__fadeIn wow" id="chapter3" src="image/chapter3.png" width=100% style="visibility: hidden; pointer-events: none;" /> -->
+
+<div class="content animate__animated animate__fadeIn wow">
+<p>
+    <br>
+    <span>当求职的大门真的开启，门内的世界，也并没有那么尽如人意。</span><br><br>
+    最近在马驹桥，有个被招到顺义工地做临时工的小伙子被架子上的铁板砸中了脑袋，好在最后脱离了生命危险。但作为临时工，如何解决后续赔偿问题，仍是一个难题。<br><br>
+    据了解，在零工市场，工伤问题一般有两种解决办法：<br><br>
+    <span>一是“私了”，即和用人单位私下沟通赔偿问题；二是打官司，用法律武器争得应有的赔偿。</span><br><br>
+    他选择了前者，对方赔付给了他两万块。尽管可能并不够支付所有医药费，但这也是大多数临时工的选择。因为没有签订合同，缺乏基本的劳动权益保障，打官司面临着很大的风险，而且赔付金额并不一定高于“私了”。<br><br>
+    <span>大龄零工的境况则更为艰难。</span><br><br>
+    今年2月份的一个凌晨，浙江宁波一位60岁的快递分拣工人，因心脏骤停猝死在岗位上。由于他年满60周岁，无法与快递公司建立劳动合同关系，因而无法缴纳工伤保险，也就无法进行工伤认定。这一事件的发生，第一次让超龄打工人的权益保障问题真正走入了公众的视野。<br><br>
+    因为超法定的劳动年龄，大龄劳动者的工作保障问题往往更加难以被妥善解决，最凸出的也是工伤认定问题。超龄，临时工，意味着他们无法与用人单位签订一份正规的劳动合同。一旦发生意外，维权将变得难上加难。<br><br>
+    在我国，各地法院判决的劳动争议案件中，也有相当一部分是因劳动者超龄而不能与用人单位形成劳动合同关系，因而被判无法享受工伤保险。<br><br>
+    我们爬取了裁判文书网有关超龄劳动争议的案件数据，其中，有关工伤认定的问题最为突出。某案件的判决结果显示，“工伤认定的前提是存在劳动关系，原被告之间不存在劳动关系。”<br><br>
+</p>
+</div>
+<!-- 裁判文书网数据-->
+<div class="box" >
+    <p style="color:#888888 ;">(鼠标悬停可查看具体案例）</p>
+<div class="q1">
+    <div class="title">工伤<br>279起</div>
+</div>
+<div class="q2">
+    <div class="title">赔偿金<br>147起</div>
+</div>
+<div class="q5">
+    <div class="title">劳动报酬<br>217起</div>
+</div>
+<div class="q3">
+    <div class="title">不予受理<br>103起</div>
+</div>
+<div class="q4">
+    <div class="title">保险问题<br>79起</div>
+</div>
+<div class="q6">
+    <div class="title" style="padding-top: 20px;">交通事故<br>53起</div>
+</div>
+</div>
+<div class="content animate__animated animate__fadeIn wow">
+<p>
+    这与我国目前实行的退休制度有关：我国现行的退休制度属于法定退休制度和强制性退休制度，即在达到法定退休年龄后，就必须结束正在进行的劳动关系，办理退休手续。在超出法定退休年龄之后继续工作的超龄打工人，只能与用人单位成立劳务关系而非劳动关系，进而无法进行工伤认定。<span>超龄，临时工，意味着他们一旦发生意外，维权将变得难上加难。</span><br><br>
+    尽管最高人民法院曾经对超龄打工人的工伤认定问题做出过批复，但在更广阔的的工作市场，这类事件依然难以得到很好的解决。<br><br>
+    另外，建立劳务关系意味着他们的工作过程不再受《劳动法》和《劳动合同法》保护。除了工伤认定问题，在判决书中，“超龄”、“未建立真正的劳动关系”也是他们无法获得合理的劳动报酬和赔偿金，无法办理相关保险等的首要原因。其中还有103条案件，因原告“超龄”而“不予受理”。<br><br>
+    <span>大龄打工人近乎赤条条地推开了求职的大门，却难以在这个新的世界得到保护。</span><br><br>
+</p>
+</div>
+<!-- chapter3结束 -->
+
+<!-- chapter4 -->
+<div class="chapter4" id="chapter4" style="text-align:center;margin: auto 0;height: 800px;">
+    <br><br><br>
+</div>
+<!-- <img class="chapter animate__animated  animate__fadeIn wow" id="chapter4" src="image/chapter4.png" width=100% style="visibility: hidden; pointer-events: none;" /> -->
+<div class="content animate__animated animate__fadeIn wow">
+<p>
+    <br>
+<span>在老龄化问题逐渐严重的今天，如何更好地解决大龄人群的就业状况，已经成为了社会各界亟待解决的问题。</span><br><br>
+2021年起，我国政府陆续出台相关政策，推动发挥“银发红利”，鼓励大龄人口、低龄老年人再就业，并完善相关就业保障。<br><br>
+2022年2月，国务院印发关于“十四五”国家老龄事业发展和养老服务体系规划的通知，通知第二十一条重点提到了老年人的再就业问题，提出要加强老年人老年人就业服务、促进老年人社会参与，涉及到职业介绍、职业技能培训、社会组织规范化等多个方面。<br><br>
+</p>
+
+<!-- 时间轴 -->
+<div class="timeline" id="timeline-vertical">
+    <div class="timeline__wrap">
+        <div class="timeline__items">
+            <div class="timeline__item animate__animated timeline__item--right animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2003年</h2>
+                    <h3>全国老龄委“银龄行动”</h3>
+                    <p>倡导组织全国大中城市离退休老年知识分子向经济欠发达地区开展智力援助行动。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--left  animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2006年</h2>
+                    <h3>《中国老龄事业发展“十一五”规划》</h3>
+                    <p>第一次将“老有所为”的对象推及到广大老年人群，并开始关注老年就业问题。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--right animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2011年</h2>
+                    <h3>《中国老龄事业发展“十二五”规划》</h3>
+                    <p>首次提出注重开发老年人力资源，鼓励老年人参与经济发展与社会公益。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--left  animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2017年</h2>
+                    <h3>《“十三五”国家老龄事业发展和养老体系及建设规划》</h3>
+                    <p>首次大篇幅论述老年就业，并提到要对有需要的老年人进行创业培训。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--right animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2021年</h2>
+                    <h3>国务院《关于加强新时代老龄工作的意见》</h3>
+                    <p>指出充分发挥低龄老年人作用，探索适合老年人灵活就业的模式。</p>
+                </div>
+            </div>
+            <div class="timeline__item animate__animated timeline__item--left  animate__fadeIn wow">
+                <div class="timeline__content">
+                    <h2>2022年</h2>
+                    <h3>国务院《关于印发“十四五”国家老龄事业发展和养老服务体系规划的通知》</h3>
+                    <p>鼓励各地建立老年人才信息库，为有劳动意愿的老年人提供再就业服务；健全相关法律法规与政策，保障老年人劳动就业权益与创业权益。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<div class="content animate__animated animate__fadeIn wow">
+<p>
+<br><br>
+<span>但“武广江们”、“陈欣们”的打工历程，仍然困难重重。</span>背负着生活的压力，年龄已经是他们再努力也迈不过的红线，求职的大门已然难以推开，门内的世界也充满危险。<br><br>
+对于老年人求职困难的问题，中国人民大学公共管理学院社会保障研究所的陈鹤副教授认为，<span>在很难改变就业大环境严峻的情况下，政府应当从体力要求、技术要求等方面研究哪些职位适合老年人，并采取一些政策鼓励企业雇佣老年人。</span>与此同时，老年人个体也需要对当前的就业形势有清晰的认识，做好个人职业定位。毕竟在经济新常态情况下，除了老年人，还有新毕业的大学生也正在投身就业浪潮。<br><br>
+另一方面，陈鹤副教授以退休返聘人员为例指出，工伤保险是需要关注的一个重要问题，他们本身处于退休身份，很难在我国的工伤保险中参保。这一问题在司法实践中差异也较大，需要国家调整相关政策。<br><br>
+<span>放眼全球，日本、韩国、英国等国家也在关注着老年人口的就业问题。</span><br><br>
+<div class="flourish-embed flourish-cards" data-src="visualisation/13745284"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<br><br>
+</p>
+<p>
+作为老龄化严重国家，日本推出的相关政策十分完善。早在20世纪70年代，日本就制定了促进中老年人就业的特别措施法，该法律历经多次完善修订，成为日本现行的“老年人稳定就业法”（日文直译为《高年龄者雇佣安定法》）。2020年3月，这部法律做了新的修订，增加了用人单位在确保满足老年人到70岁为止享有就业机会，为老龄人口就业提供了坚实的法律保障。<br><br>
+在英国，老年人口打零工的现象较为普遍，各地政府针对当地不同程度的货运司机人力短缺、新冠疫情导致的公立医疗机构医护人员短缺，以及公立学校师资不足等问题，呼吁有相关背景的退休人员重新上岗，帮助国家应对危机，也在一定程度上解决了大龄人口的工作问题。<br><br>
+</p>
+<p>
+有国外先例的辅助，也许能够帮助我们更好地解决我国的大龄人口就业问题。<br><br>
+</p>
+</div>
+<!--  chapter4结束 -->
+
+<!-- ending -->
+<h1 id="ending"></h1>
+<!-- <div class="content animate__animated animate__fadeIn wow">
+<p>
+故事的最后，他们都选择以“回去”，给自己的大龄求职之路画上句号。<br><br>
+杨宽后来也去了马驹桥，但还是没有找到合适的工作，如今已经回到了老家，回到他最熟悉的建筑工地上；<br><br>
+陈欣还在一边碰壁一边前行，她说如果实在没办法，她会选择回到曾经短暂待过一段时间的小公司，尽管那份工作并不适合她;<br><br>
+武广江准备明年回到辽宁老家，他说虽然过不了“好日子”，但是起码能够“维持生命”。<br><br>
+回去的路是否顺畅，我们也许很难得知。<br><br>
+但我们期盼有一天，他们可以不再“回去”，而是能够昂首阔步走向人生的下半场。<br><br>
+</p>
+</div> -->
+
+
+<div class="ending">
+    <div class="ending1 animate__animated  animate__fadeIn wow" data-wow-duration="1s" data-wow-delay="1s">
+        <p> 故事的最后，他们都选择以“回去”，给自己的大龄求职之路画上句号。</p>
+    </div>
+    <div class="ending2 animate__animated animate__fadeIn wow" data-wow-duration="1.5s" data-wow-delay="1.5s">
+        <p>杨宽后来也去了马驹桥，但还是没有找到合适的工作，<br>如今已经回到了老家，回到他最熟悉的建筑工地上；</p>
+    </div>
+    <div class="ending3 animate__animated animate__fadeIn wow" data-wow-duration="2s" data-wow-delay="2s">
+        <p>陈欣还在一边碰壁一边前行，她说如果实在没办法，<br>她会选择回到曾经短暂待过一段时间的小公司，尽管那份工作并不适合她;</p>
+    </div>
+    <div class="ending4 animate__animated animate__fadeIn wow" data-wow-duration="2.5s" data-wow-delay="2.5s">
+        <p>武广江准备明年回到辽宁老家，他说虽然过不了“好日子”，但是起码能够“维持生命”。</p>
+    </div>
+    <div class="ending5 animate__animated animate__fadeIn wow" data-wow-duration="2.5s" data-wow-delay="3s">
+        <p>回去的路是否顺畅，我们也许很难得知。</p>
+    </div>
+    <div class="ending6 animate__animated animate__fadeIn wow" data-wow-duration="2.5s" data-wow-delay="3.5s">
+        <p>但我们期盼有一天，他们可以不再“回去”，而是能够昂首阔步走向人生的下半场。</p>   
+    </div>
+</div>
+<script src="js/jquery-1.7.2.min.js" language="javascript"></script>
+<script src="js/ScrollMagic.js"></script> 
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/ScrollMagic.js"></script>
+<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="https://unpkg.com/scrollama"></script>
+<script src="js/d3.min.js" language="javascript"></script>
+<script src="js/jquery.color.js" language="javascript"></script>
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+<script src = "js/timeline.min.js" ></script> 
+<script>
+    new WOW().init();
+</script>
+<script>
+
+var cover = {
+    reset: true,
+    duration:2000,
+    opacity:0,
+    easing: 'ease-in'
+};
+
+ScrollReveal().reveal('.cover',cover);
+
+var cover1 = {
+    reset: true,
+    opacity:0,
+    delay: 375, 
+    duration:2000,
+    easing: 'ease-in'
+};
+
+ScrollReveal().reveal('.cover1', cover1);
+
+</script>
+
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('echarts'));
+
+    // 指定图表的配置项和数据
+   var option = {
+    title: {
+        text: ''
+    },
+    tooltip: {
+        trigger: 'axis',
+        valueFormatter: function (value) {
+        return value + '万'
+        }
+    },
+    legend: {
+        data: ['60岁以上在业人口数', '65岁以上在业人口数']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+        saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1990', '2000', '2010', '2020']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+        name: '60岁以上在业人口数',
+        type: 'line',
+        color: '#fdd556',
+        data: [2758.5, 4290.8, 5372.6, 5372.6]
+        },
+        {
+        name: '65岁以上在业人口数',
+        type: 'line',
+        color: '#858586',
+        data: [1213.6, 2207.1, 2490.4, 3753.2]
+        }
+    ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+
+<script src="d3.min.js" tppabs="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+<script src="intersection-observer.js" tppabs="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+<script src="stickyfill.min.js" tppabs="http://historiascondatos.com/js/stickyfill.min.js"></script>
+<script src="scrollama.min.js" tppabs="http://historiascondatos.com/js/scrollama.min.js"></script>
+<script>
+    // using d3 for convenience
+    var main = d3.select("main");
+    var scrolly = main.select("#scrolly");
+    var figure = scrolly.select("figure");
+    var article = scrolly.select("article");
+    var step = article.selectAll(".step");
+
+    // initialize the scrollama
+    var scroller = scrollama();
+
+    // generic window resize listener event
+    function handleResize() {
+      // 1. update height of step elements
+      var stepH = Math.floor(window.innerHeight * 1);
+      
+      step.style("height", 330 + "px");
+
+      var figureHeight = window.innerHeight ;
+      var figureMarginTop = (window.innerHeight - figureHeight) ;
+
+      figure
+        .style("height", figureHeight + "px")
+        .style("top", 0 + "px");
+
+      // 3. tell scrollama to update new element dimensions
+      scroller.resize();
+    }
+
+    // scrollama event handlers
+    function handleStepEnter(response) {
+      console.log(response);
+      // response = { element, direction, index }
+
+      // add color to current step only
+      step.classed("is-active", function (d, i) {
+        return i === response.index;
+      });
+      
+     
+
+      // update graphic based on step
+      figure.select("p").text(response.index + 1);
+     
+    //   figure.select("iframe").attr("src", function (d) {
+    //     return (
+    //       "https://flo.uri.sh/story/1911968/embed#slide-" + response.index
+          
+    //     );
+    //   });
+    
+    var iframe = document.querySelector("#scrolly iframe");
+iframe.src = iframe.src.replace(/#slide-.*/, "") + "#slide-" + response.index;
+}
+
+    function setupStickyfill() {
+      d3.selectAll(".sticky").each(function () {
+        Stickyfill.add(this);
+      });
+    }
+
+    function init() {
+      setupStickyfill();
+
+      // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+      handleResize();
+
+      // 2. setup the scroller passing options
+      // 		this will also initialize trigger observations
+      // 3. bind scrollama event handlers (this can be chained like below)
+      scroller
+        .setup({
+          step: "#scrolly article .step",
+          offset: 0.05,
+          debug: false,
+        })
+        .onStepEnter(handleStepEnter);
+
+      // setup resize event
+      window.addEventListener("resize", handleResize);
+    }
+
+    // kick things off
+    init();
+  </script>
+
+<script>
+    timeline(document.querySelectorAll('#timeline-vertical'), {
+        verticalStartPosition: 'right',
+        verticalTrigger: '150px'
+    });
+</script>
+</body>
+</html>
