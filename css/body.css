@@ -277,6 +277,11 @@ h1{
 .ending p{
     margin: auto;
 }
-
+.team{
+    text-align: center;
+    color:#343434;
+    line-height: 2em;
+    font-size: 16px;
+}
 
   
